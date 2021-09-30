@@ -1,0 +1,526 @@
+* {
+  font-family: calibri;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* NAVBAR --------------- */
+.navbar {
+  background: #000064;
+  font-family: calibri !important;
+  color: #fff;
+  font-size: 18px !important;
+}
+/* efecto luz en navbar*/
+.navbar li:hover {
+  text-shadow: 0 0 30px #fff;
+}
+.navbar-brand:hover {
+  text-shadow: 0 0 30px #fff;
+}
+.navbar li .nav-link {
+  color: #fff !important;
+  font-weight: bold;
+}
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
+/* color a los navbarDropdownMenuLink*/
+.dropdown:hover > .dropdown-menu {
+  display: block;
+  background: #1111b1;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: #97c039;
+  color: #fff;
+  transition: 0.6s;
+}
+/*letra bold y blanca del navbarDropdownMenuLink*/
+.dropdown-menu a {
+  color: #fff !important;
+}
+.navbar-light .navbar-toggler-icon {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+/* fin menu ----------------- */
+@media screen and (min-width: 970px) and (max-width: 1130px) {
+  .navbar {
+    font-size: 16px !important ;
+  }
+}
+/* seccion  foto ------------------ */
+.logo-encabezado {
+  background-attachment: fixed;
+}
+.imagen-fondo {
+  width: 100%;
+  border: 0;
+  display: block;
+  margin: auto;
+  /* filter:brightness(0.4); */
+  filter: blur(5px);
+  z-index: -1;
+  opacity: 0.9;
+}
+.logo {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-top: 50px;
+  margin: auto;
+  width: 70%;
+  transform: translate(-50%);
+}
+/* fin seccion foto ------------------------- */
+
+/* -- post slider -- */
+
+.post-slider {
+  position: relative;
+  /* border:  1px solid red; */
+}
+.post-slider .post-wrapper {
+  width: 85%;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px 0 10px 0;
+  /* border:1px dashed red; */
+}
+.post-slider .slider-title {
+  text-align: center;
+  margin: 15px auto;
+  color: #000064;
+}
+.post-slider .next {
+  fill: #97c039;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  font-size: 4em;
+  color: black;
+  cursor: pointer;
+  z-index: 9;
+  transform: scale(0.7);
+  transition: transform 0.3s;
+}
+.post-slider .next:hover {
+  transform: scale(0.9);
+}
+.post-slider .prev {
+  fill: #97c039;
+  transform: rotate(-180deg) scale(0.7);
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  font-size: 4em;
+  cursor: pointer;
+  z-index: 9;
+  transition: transform 0.3s;
+}
+.post-slider .prev:hover {
+  transform: scale(0.9);
+  transform: rotate(-180deg) scale(0.9);
+}
+.post-slider .post-wrapper .post {
+  width: 200px;
+  height: 380px;
+  margin: 0 10px;
+  display: inline-block;
+  background-color: black;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  /* border: 5px solid #95ba40; */
+  /* box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.75); */
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  transition-duration: 1s;
+}
+.post-slider .post-wrapper .post:hover {
+  transform: scale(1.03);
+  transition: 1s;
+}
+.post-slider .post-wrapper .post .slider-image {
+  /* width: 100%; */
+  height: 100%;
+  position: absolute;
+  display: block;
+  margin: auto;
+  opacity: 0.6;
+  margin-left: -20%;
+}
+.post-slider .post-wrapper .post .post-info {
+  position: relative;
+  text-align: center;
+  margin-top: 30%;
+  color: #fff;
+  font-size: 2.3rem;
+}
+.post-slider .post-wrapper a {
+  text-decoration: none;
+}
+/* seccion videos ------------------------- */
+.main {
+  width: 100%;
+  margin: auto;
+  background-color: rgb(200, 245, 245);
+  align-items: right;
+}
+.main p {
+  font-size: 20px;
+  text-align: center;
+}
+.titantartida {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+}
+.btn-antartida {
+  background-color: #97c039 !important;
+
+  margin-top: 50px;
+}
+.btn-antartida:hover {
+  background-color: #5b7917 !important;
+  color: #fff !important;
+}
+/* -- seccion microcosmos -- */
+
+.section-microcosmos {
+  padding: 20px 50px 50px 50px;
+  text-align: center;
+  color: #000064;
+  background-color: rgb(219, 233, 233);
+}
+.section-microcosmos p {
+  font-size: 20px;
+  margin: auto;
+  margin-top: 40px;
+  width: 70%;
+}
+.section-microcosmos h3 {
+  font-size: 35px;
+  margin-top: 40px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 350px) {
+  .section-microcosmos {
+    padding: 10px 10px 10px 10px;
+  }
+  .section-microcosmos p {
+    justify-content: center;
+    width: auto;
+    font-size: 17px;
+  }
+  .section-microcosmos h3 {
+    font-size: 25px;
+  }
+}
+
+/* -- titulo 1 -- */
+
+.imagenlogo {
+  width: 50px;
+  height: 80px;
+}
+.imagenlogo1 {
+  width: 30px;
+  height: 50px;
+}
+#titulo-1 {
+  text-align: center;
+  font-size: 35px;
+  color: #000064;
+  margin-top: 8%;
+  font-weight: normal;
+}
+
+/* -- caracteristicas -- */
+
+.card-wrapper {
+  margin: 5% auto 8%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+}
+.card-wrapper .card {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  border: 6px solid #95ba40;
+}
+.card-wrapper .card h4 {
+  font-size: 20px;
+  color: #000064;
+  display: flex;
+  align-items: center;
+}
+.uno:hover {
+  box-shadow: inset 0 0 20px #95ba40, 0 0 20px #95ba40;
+}
+
+.dentro {
+  margin-top: 80px;
+}
+.btn-cards {
+  background-color: #b8dd62 !important;
+}
+.btn-cards:hover {
+  background-color: #5b7917 !important;
+  color: #fff !important;
+}
+
+/* -- Contador -- */
+
+.contador {
+  width: 100%;
+  height: 150px;
+  background-color: #000064;
+  display: flex;
+  text-align: center;
+}
+.contador div {
+  margin: auto;
+}
+.contador-titulo {
+  color: turquoise;
+  font-weight: normal;
+  font-size: 30px;
+}
+.contador-numero {
+  color: #97c039;
+  font-size: 30px;
+}
+@media screen and (max-width: 320px) {
+  .contador-titulo {
+    font-size: 18px;
+  }
+  .contador-numero {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 600px) {
+  .contador-titulo {
+    font-size: 20px;
+  }
+  .contador-numero {
+    font-size: 20px;
+  }
+}
+
+/* -- auspiciantes -- */
+
+.auspiciantes {
+  width: 100%;
+  height: 220px;
+  background-color: #fff;
+  margin-top: 5%;
+}
+.auspiciantes h3 {
+  color: #000064;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: normal;
+}
+.logo-ithurbide {
+  width: 200px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* -- seccion Objetivos -- */
+
+.section-objetivos {
+  background-color: rgb(219, 233, 233);
+  width: 100%;
+  padding-bottom: 4%;
+}
+.section-objetivos h3 {
+  color: #000064;
+  padding: 35px 0 20px 0;
+  font-size: 35px;
+  text-align: center;
+  font-weight: normal;
+}
+.section-objetivos p {
+  color: #000064;
+  text-align: center;
+  font-size: 20px;
+  width: 75%;
+  margin: auto;
+  margin-top: 25px;
+}
+.btnact {
+  margin-left: 800px;
+}
+
+/* -- Actividades -- */
+
+.actividades {
+  color: #323235;
+
+  justify-content: center;
+  padding: 20px;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.actividades ul li {
+  list-style: disc;
+  font-size: 20px;
+  text-align: left;
+}
+.actividades h4 {
+  font-size: 28px;
+  text-align: center;
+  padding: 10px;
+  font-weight: normal;
+  margin-top: 15px;
+}
+.actividades p {
+  font-size: 20px;
+  text-align: left;
+}
+.actividades h3 {
+  text-align: center;
+  padding: 10px;
+  font-weight: normal;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 320px) {
+  .actividades h3 {
+    font-size: 30px;
+  }
+  .actividades h4 {
+    font-size: 20px;
+  }
+  .actividades ul li {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 600px) {
+  .actividades h3 {
+    font-size: 35px;
+    color: yellow;
+  }
+  .actividades h4 {
+    font-size: 30px;
+  }
+  .actividades ul li {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+}
+
+/* -- Proyecto de edificio -- */
+.galeria {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+.galeria .col-lg-4 {
+  margin: 0 !important;
+  padding: 25px;
+}
+.galeria h2 {
+  padding-top: 20px;
+}
+.imagaleria {
+  width: 100%;
+  height: 200px;
+}
+
+.imagaleria {
+  /* Sombra normal */
+  box-shadow: 2px 2px 10px rgb(3, 79, 122);
+}
+
+/* separador */
+.contador-frase {
+  font-size: 20px;
+  color: blanchedalmond;
+}
+@media screen and (max-width: 320px) {
+  .contador-frase {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 350px) {
+  .contador-frase {
+    font-size: 18px;
+  }
+}
+/* -- footer -- */
+
+footer {
+  background-color: #000064;
+  width: 100%;
+  padding-bottom: 6%;
+  padding-top: 6%;
+  padding-left: 20px;
+  color: #fff;
+}
+.menu-footer {
+  display: block;
+  width: 60%;
+  margin-left: 4%;
+  columns: 2;
+}
+.menu-footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.9em;
+  transition: all 0.3s;
+}
+.menu-footer a:hover {
+  font-weight: bold;
+  font-size: 16px;
+}
+footer .footerLogo h3 {
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  margin-top: 6%;
+  font-weight: normal;
+}
+footer .footerLogo p {
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+}
+.menu-footer li {
+  margin-top: 2%;
+}
+/* scroll to top nuevo  =======================*/
+.ir-arriba {
+  display: none;
+  padding: 10px;
+  background: #024959;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
